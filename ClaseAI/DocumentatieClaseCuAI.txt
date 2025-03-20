@@ -1,0 +1,12 @@
+Documentatie clase java cu AI: prompt facut de noi: “salut, fa-mi te rog 2-3 clase care sa respecte fisa cerintelor de mai jos”
+Avantaje:
+-scriere rapida, ai de unde pleca si de unde sa extinzi ideile
+Sugestii și recomandări pentru funcționalități
+realizarea task-urilor intr-un timp scurt
+
+Dezavantaje:
+Necesitatea de a ajusta manual soluțiile propuse:
+-este usor de gresit deoarce se genereaza automat si nu pas cu pas astfel incat observi mai greu ceva ce nu este in comformitate cu schema dorita; pe cand, atunci cand lucrezi de mana, pas cu pas, il regasesti pe fiecare si
+verifici de doua ori daca este ceea ce se doreste.
+Lipsa de context complet
+Posibilitatea de a introduce erori în arhitectură
