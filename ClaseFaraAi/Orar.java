@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.laborator4ip;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-/**
- *
- * @author RACU RARES LIVIU
- */
 public class Orar {
     private Clasa[] clase;
 
@@ -15,18 +9,42 @@ public class Orar {
         this.clase = clase;
     }
 
-    public Clasa[] getClasedis(String dis) {
-        for(Clasa clasec : clase)
-            if(clasec.getDisciplina())
+    public List<Clasa> getClaseDisciplina(String dis) {
+        List<Clasa> rezultat = new ArrayList<>();
+        for (Clasa clasec : clase) {
+            if (clasec.getDisciplina().equals(dis)) {
+                rezultat.add(clasec);
+            }
+        }
+        return rezultat;
+    }
+
+    public List<Clasa> getClaseProfesor(Profesor profesor) {
+        List<Clasa> rezultat = new ArrayList<>();
+        for (Clasa clasec : clase) {
+            if (clasec.getProfesor().equals(profesor)) {
+                rezultat.add(clasec);
+            }
+        }
+        return rezultat;
+    }
+
+    public List<Clasa> getClaseSala(String sala) {
+        List<Clasa> rezultat = new ArrayList<>();
+        for (Clasa clasec : clase) {
+            if (clasec.getDisciplina().equals(sala)) {
+                rezultat.add(clasec);
+            }
+        }
+        return rezultat;
     }
 
     public void setClase(Clasa[] clase) {
         this.clase = clase;
     }
 
-    @Override
+   
     public String toString() {
-        return "Orar{" + "clase=" + clase + '}';
+        return "Orar{" + "clase=" + Arrays.toString(clase) + '}';
     }
-    
 }
