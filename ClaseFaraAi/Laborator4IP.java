@@ -29,6 +29,6 @@ public class Laborator4IP {
                 "Miercuri",
                 "1A2"
         );
-
+Clasa[] clase = {clasa1, clasa2, clasa3};
     }
 }
